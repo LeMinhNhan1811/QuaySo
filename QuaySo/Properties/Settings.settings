@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QuaySo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="selectFillColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">224, 224, 224</Value>
+    </Setting>
+    <Setting Name="selectOutlineColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="selectShadowColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="mainFillColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">192, 64, 0</Value>
+    </Setting>
+    <Setting Name="mainOutlineColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">128, 64, 0</Value>
+    </Setting>
+    <Setting Name="mainShadowColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="outlineStrength" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="font" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Tw Cen MT, 100pt</Value>
+    </Setting>
+    <Setting Name="duration" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="interval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="backgroundLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">background.png</Value>
+    </Setting>
+    <Setting Name="font2" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Tw Cen MT, 50pt</Value>
+    </Setting>
+    <Setting Name="soundSelectingLoc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">select.wav</Value>
+    </Setting>
+    <Setting Name="soundWinLoc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">win.wav</Value>
+    </Setting>
+    <Setting Name="font3" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Tw Cen MT, 50pt</Value>
+    </Setting>
+    <Setting Name="lastshownSlowDownTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

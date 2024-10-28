@@ -1,0 +1,35 @@
+F:\An-9 remake\option C#\source\QuaySo\bin\Debug\QuaySo.exe.config
+F:\An-9 remake\option C#\source\QuaySo\bin\Debug\QuaySo.exe
+F:\An-9 remake\option C#\source\QuaySo\bin\Debug\QuaySo.pdb
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\QuaySo.csprojResolveAssemblyReference.cache
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\CzaryText.Control.DrawShape.resources
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\QuaySo.Form1.resources
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\QuaySo.Properties.Resources.resources
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\QuaySo.csproj.GenerateResource.Cache
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\QuaySo.exe
+F:\An-9 remake\option C#\source\QuaySo\obj\Debug\QuaySo.pdb
+F:\Quay so\source\QuaySo\bin\Debug\QuaySo.exe.config
+F:\Quay so\source\QuaySo\obj\Debug\QuaySo.exe
+F:\Quay so\source\QuaySo\obj\Debug\QuaySo.pdb
+F:\Quay so\source\QuaySo\bin\Debug\QuaySo.exe
+F:\Quay so\source\QuaySo\bin\Debug\QuaySo.pdb
+F:\Quay so\source\QuaySo\obj\Debug\QuaySo.csprojResolveAssemblyReference.cache
+F:\Quay so\source\QuaySo\obj\Debug\CzaryText.Control.DrawShape.resources
+F:\Quay so\source\QuaySo\obj\Debug\QuaySo.Form1.resources
+F:\Quay so\source\QuaySo\obj\Debug\QuaySo.Properties.Resources.resources
+F:\Quay so\source\QuaySo\obj\Debug\QuaySo.csproj.GenerateResource.Cache
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Debug\QuaySo.exe.config
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Debug\QuaySo.exe
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Debug\QuaySo.pdb
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\CzaryText.Control.DrawShape.resources
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.Form1.resources
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.Properties.Resources.resources
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.csproj.GenerateResource.cache
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.csproj.CoreCompileInputs.cache
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.exe
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.pdb
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Debug\QuaySo.exe.manifest
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Debug\QuaySo.application
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.exe.manifest
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.application
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Debug\QuaySo.csproj.AssemblyReference.cache

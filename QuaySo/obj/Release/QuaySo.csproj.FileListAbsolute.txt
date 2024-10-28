@@ -1,0 +1,15 @@
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Release\QuaySo.exe.config
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Release\QuaySo.exe.manifest
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Release\QuaySo.application
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Release\QuaySo.exe
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\bin\Release\QuaySo.pdb
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.csproj.AssemblyReference.cache
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\CzaryText.Control.DrawShape.resources
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.Form1.resources
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.Properties.Resources.resources
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.csproj.GenerateResource.cache
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.csproj.CoreCompileInputs.cache
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.exe.manifest
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.application
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.exe
+D:\Nhan-lm\ĐTN\Quay so\source\QuaySo\obj\Release\QuaySo.pdb
