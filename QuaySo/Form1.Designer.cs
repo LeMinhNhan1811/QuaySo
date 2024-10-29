@@ -51,8 +51,11 @@
             this.loadSelectingSoundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadWinSoundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.drawShape3 = new CzaryText.Control.DrawShape();
+            this.drawShape2 = new CzaryText.Control.DrawShape();
             this.labelFileStatus = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.drawShape1 = new CzaryText.Control.DrawShape();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.buttonSet = new System.Windows.Forms.Button();
@@ -66,9 +69,6 @@
             this.btnContinue = new System.Windows.Forms.Button();
             this.btnNewSpin = new System.Windows.Forms.Button();
             this.txtBoxOutLineStrength = new QuaySo.NumericTextBox();
-            this.drawShape3 = new CzaryText.Control.DrawShape();
-            this.drawShape2 = new CzaryText.Control.DrawShape();
-            this.drawShape1 = new CzaryText.Control.DrawShape();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +97,7 @@
             // loadFileToolStripMenuItem
             // 
             this.loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
-            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.loadFileToolStripMenuItem.Text = "Load File";
             this.loadFileToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
             // 
@@ -105,7 +105,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -259,6 +259,46 @@
             this.panel1.Size = new System.Drawing.Size(791, 438);
             this.panel1.TabIndex = 3;
             // 
+            // drawShape3
+            // 
+            this.drawShape3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.drawShape3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.drawShape3.BackColor = System.Drawing.Color.Transparent;
+            this.drawShape3.BoderColor = System.Drawing.Color.Black;
+            this.drawShape3.BoderPenWidth = 2;
+            this.drawShape3.Caption = "";
+            this.drawShape3.FillColor = System.Drawing.Color.OrangeRed;
+            this.drawShape3.FontName = "Microsoft Sans Serif";
+            this.drawShape3.GradientColor = System.Drawing.Color.Transparent;
+            this.drawShape3.Location = new System.Drawing.Point(3, 325);
+            this.drawShape3.Name = "drawShape3";
+            this.drawShape3.PenSize = 48;
+            this.drawShape3.ShadowColor = System.Drawing.Color.Black;
+            this.drawShape3.ShadowOpacity = 50;
+            this.drawShape3.Size = new System.Drawing.Size(788, 109);
+            this.drawShape3.TabIndex = 8;
+            this.drawShape3.TextType = CzaryText.Control.TextType.Text3Outline;
+            // 
+            // drawShape2
+            // 
+            this.drawShape2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.drawShape2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.drawShape2.BackColor = System.Drawing.Color.Transparent;
+            this.drawShape2.BoderColor = System.Drawing.Color.Black;
+            this.drawShape2.BoderPenWidth = 2;
+            this.drawShape2.Caption = "";
+            this.drawShape2.FillColor = System.Drawing.Color.OrangeRed;
+            this.drawShape2.FontName = "Microsoft Sans Serif";
+            this.drawShape2.GradientColor = System.Drawing.Color.Transparent;
+            this.drawShape2.Location = new System.Drawing.Point(0, 215);
+            this.drawShape2.Name = "drawShape2";
+            this.drawShape2.PenSize = 48;
+            this.drawShape2.ShadowColor = System.Drawing.Color.Black;
+            this.drawShape2.ShadowOpacity = 50;
+            this.drawShape2.Size = new System.Drawing.Size(791, 113);
+            this.drawShape2.TabIndex = 7;
+            this.drawShape2.TextType = CzaryText.Control.TextType.Text3Outline;
+            // 
             // labelFileStatus
             // 
             this.labelFileStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -280,6 +320,27 @@
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "STC Tân Cảng";
+            // 
+            // drawShape1
+            // 
+            this.drawShape1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.drawShape1.BackColor = System.Drawing.Color.Transparent;
+            this.drawShape1.BoderColor = System.Drawing.Color.Black;
+            this.drawShape1.BoderPenWidth = 3;
+            this.drawShape1.Caption = "";
+            this.drawShape1.FillColor = System.Drawing.Color.DarkOrange;
+            this.drawShape1.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawShape1.FontName = "Microsoft Sans Serif";
+            this.drawShape1.GradientColor = System.Drawing.Color.Transparent;
+            this.drawShape1.Location = new System.Drawing.Point(-1, 8);
+            this.drawShape1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.drawShape1.Name = "drawShape1";
+            this.drawShape1.PenSize = 100;
+            this.drawShape1.ShadowColor = System.Drawing.Color.Black;
+            this.drawShape1.ShadowOpacity = 50;
+            this.drawShape1.Size = new System.Drawing.Size(791, 214);
+            this.drawShape1.TabIndex = 2;
+            this.drawShape1.TextType = CzaryText.Control.TextType.Text3Outline;
             // 
             // buttonSet
             // 
@@ -374,67 +435,6 @@
             this.txtBoxOutLineStrength.Name = "txtBoxOutLineStrength";
             this.txtBoxOutLineStrength.Size = new System.Drawing.Size(55, 20);
             this.txtBoxOutLineStrength.TabIndex = 4;
-            // 
-            // drawShape3
-            // 
-            this.drawShape3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.drawShape3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.drawShape3.BackColor = System.Drawing.Color.Transparent;
-            this.drawShape3.BoderColor = System.Drawing.Color.Black;
-            this.drawShape3.BoderPenWidth = 2;
-            this.drawShape3.Caption = "";
-            this.drawShape3.FillColor = System.Drawing.Color.OrangeRed;
-            this.drawShape3.FontName = "Microsoft Sans Serif";
-            this.drawShape3.GradientColor = System.Drawing.Color.Transparent;
-            this.drawShape3.Location = new System.Drawing.Point(3, 325);
-            this.drawShape3.Name = "drawShape3";
-            this.drawShape3.PenSize = 48;
-            this.drawShape3.ShadowColor = System.Drawing.Color.Black;
-            this.drawShape3.ShadowOpacity = 50;
-            this.drawShape3.Size = new System.Drawing.Size(788, 109);
-            this.drawShape3.TabIndex = 8;
-            this.drawShape3.TextType = CzaryText.Control.TextType.Text3Outline;
-            // 
-            // drawShape2
-            // 
-            this.drawShape2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.drawShape2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.drawShape2.BackColor = System.Drawing.Color.Transparent;
-            this.drawShape2.BoderColor = System.Drawing.Color.Black;
-            this.drawShape2.BoderPenWidth = 2;
-            this.drawShape2.Caption = "";
-            this.drawShape2.FillColor = System.Drawing.Color.OrangeRed;
-            this.drawShape2.FontName = "Microsoft Sans Serif";
-            this.drawShape2.GradientColor = System.Drawing.Color.Transparent;
-            this.drawShape2.Location = new System.Drawing.Point(0, 215);
-            this.drawShape2.Name = "drawShape2";
-            this.drawShape2.PenSize = 48;
-            this.drawShape2.ShadowColor = System.Drawing.Color.Black;
-            this.drawShape2.ShadowOpacity = 50;
-            this.drawShape2.Size = new System.Drawing.Size(791, 113);
-            this.drawShape2.TabIndex = 7;
-            this.drawShape2.TextType = CzaryText.Control.TextType.Text3Outline;
-            // 
-            // drawShape1
-            // 
-            this.drawShape1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.drawShape1.BackColor = System.Drawing.Color.Transparent;
-            this.drawShape1.BoderColor = System.Drawing.Color.Black;
-            this.drawShape1.BoderPenWidth = 3;
-            this.drawShape1.Caption = "";
-            this.drawShape1.FillColor = System.Drawing.Color.DarkOrange;
-            this.drawShape1.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drawShape1.FontName = "Microsoft Sans Serif";
-            this.drawShape1.GradientColor = System.Drawing.Color.Transparent;
-            this.drawShape1.Location = new System.Drawing.Point(-1, 8);
-            this.drawShape1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.drawShape1.Name = "drawShape1";
-            this.drawShape1.PenSize = 100;
-            this.drawShape1.ShadowColor = System.Drawing.Color.Black;
-            this.drawShape1.ShadowOpacity = 50;
-            this.drawShape1.Size = new System.Drawing.Size(791, 214);
-            this.drawShape1.TabIndex = 2;
-            this.drawShape1.TextType = CzaryText.Control.TextType.Text3Outline;
             // 
             // Form1
             // 

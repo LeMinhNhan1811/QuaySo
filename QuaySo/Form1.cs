@@ -140,7 +140,6 @@ namespace QuaySo
             soundWin = new SoundPlayer(soundWinLoc);
 
             drawShape1.lineAlignment = StringAlignment.Far;
-            drawShape3.Caption = "test";
             SetAllDoubleBuffer();
         }
 
@@ -432,8 +431,8 @@ namespace QuaySo
             if (File.Exists(soundWinLoc) == true)
             {
                 soundWin.Play();
-                drawShape3.Caption += String.Join("; ", record);
             }
+            drawShape3.Caption += String.Join("; ", record);
         }
 
         /**
