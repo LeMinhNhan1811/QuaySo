@@ -18,7 +18,6 @@ E:\Out-Source\QuaySo\QuaySo\QuaySo\bin\Release\QuaySo.exe.manifest
 E:\Out-Source\QuaySo\QuaySo\QuaySo\bin\Release\QuaySo.application
 E:\Out-Source\QuaySo\QuaySo\QuaySo\bin\Release\QuaySo.exe
 E:\Out-Source\QuaySo\QuaySo\QuaySo\bin\Release\QuaySo.pdb
-E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.csproj.AssemblyReference.cache
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\CzaryText.Control.DrawShape.resources
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.Form1.resources
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.Properties.Resources.resources
@@ -28,3 +27,4 @@ E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.exe.manifest
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.application
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.exe
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.pdb
+E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.csproj.AssemblyReference.cache

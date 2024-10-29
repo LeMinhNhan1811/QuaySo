@@ -26,6 +26,7 @@ Global
 		{AEF60450-0406-4EB3-B1C1-94D126E15D1C}.Debug|Any CPU.ActiveCfg = Debug
 		{AEF60450-0406-4EB3-B1C1-94D126E15D1C}.Debug|x86.ActiveCfg = Debug
 		{AEF60450-0406-4EB3-B1C1-94D126E15D1C}.Release|Any CPU.ActiveCfg = Release
+		{AEF60450-0406-4EB3-B1C1-94D126E15D1C}.Release|Any CPU.Build.0 = Release
 		{AEF60450-0406-4EB3-B1C1-94D126E15D1C}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution

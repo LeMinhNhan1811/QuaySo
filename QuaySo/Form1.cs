@@ -37,8 +37,8 @@ namespace QuaySo
         SoundPlayer soundWin;
 
         /// list load from file, 2D string Array, 0 is name, 1 is company
-        List<string[]> database;
-        private List<string[]> databaseNoRemove = new List<string[]>();
+        List<string[]> listSpinner;
+        private List<string[]> originalListSpinner = new List<string[]>();
 
         /// <summary>
         /// list record
@@ -140,7 +140,7 @@ namespace QuaySo
             soundWin = new SoundPlayer(soundWinLoc);
 
             drawShape1.lineAlignment = StringAlignment.Far;
-
+            drawShape3.Caption = "test";
             SetAllDoubleBuffer();
         }
 
@@ -253,7 +253,7 @@ namespace QuaySo
          */
         private void LoadData(string dir)
         {
-            database = new List<string[]>();
+            listSpinner = new List<string[]>();
             record = new List<string>();
 
             IEnumerable<string> names = File.ReadLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dir));
@@ -292,10 +292,10 @@ namespace QuaySo
                         temp[2] = "";
                     }
 
-                    database.Add(temp);
+                    listSpinner.Add(temp);
                 }
             }
-            databaseNoRemove = new List<string[]>(database);
+            originalListSpinner = new List<string[]>(listSpinner);
 
             isQuaySoEnable = true;
         }
@@ -322,11 +322,11 @@ namespace QuaySo
             Random r = new Random(); //using for create random number
             int index = 0;
 
-            index = r.Next(database.Count);
+            index = r.Next(listSpinner.Count);
 
-            if (index >= database.Count)
+            if (index >= listSpinner.Count)
             {
-                index = database.Count - 1;
+                index = listSpinner.Count - 1;
             }
 
             return index;
@@ -340,7 +340,7 @@ namespace QuaySo
             int index = randomUser();
 
             string[] user = new string[2];
-            user = database[index];
+            user = listSpinner[index];
 
             //drawing
             drawShape1.Caption = user[0].ToString();
@@ -379,7 +379,7 @@ namespace QuaySo
             int index = randomUser();
 
             string[] user = new string[2];
-            user = database[index];
+            user = listSpinner[index];
 
             //drawing
             drawShape1.Caption = user[0].ToString();
@@ -400,7 +400,7 @@ namespace QuaySo
         public void lastShown(int index)
         {
             string[] user = new string[2];
-            user = database[index];
+            user = listSpinner[index];
 
             drawShape1.FillColor = mainFillColor;
             drawShape1.BoderColor = mainOutlineColor;
@@ -423,7 +423,7 @@ namespace QuaySo
             drawShape3.Invalidate();
 
             record.Add(user[0].ToString());
-            database.RemoveAt(index);
+            listSpinner.RemoveAt(index);
 
             isQuaySoEnable = true;
 
@@ -443,7 +443,7 @@ namespace QuaySo
         {
             timer.Interval = interval;  //setting timer for each time called func Selecting
 
-            if (isQuaySoEnable == true && database.Count != 0)
+            if (isQuaySoEnable == true && listSpinner.Count != 0)
             {
                 isQuaySoEnable = false;
 
@@ -780,7 +780,7 @@ namespace QuaySo
 
         private void btnNewSpin_Click(object sender, EventArgs e)
         {
-            database = new List<string[]>(databaseNoRemove);
+            listSpinner = new List<string[]>(originalListSpinner);
             clearForm();
         }
 
