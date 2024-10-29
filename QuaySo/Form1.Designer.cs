@@ -63,6 +63,8 @@
             this.txtBoxLasttimeSlowDown = new System.Windows.Forms.TextBox();
             this.buttonSetSlownDown = new System.Windows.Forms.Button();
             this.labelLastshowTime = new System.Windows.Forms.Label();
+            this.btnContinue = new System.Windows.Forms.Button();
+            this.btnNewSpin = new System.Windows.Forms.Button();
             this.txtBoxOutLineStrength = new QuaySo.NumericTextBox();
             this.drawShape3 = new CzaryText.Control.DrawShape();
             this.drawShape2 = new CzaryText.Control.DrawShape();
@@ -95,7 +97,7 @@
             // loadFileToolStripMenuItem
             // 
             this.loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
-            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadFileToolStripMenuItem.Text = "Load File";
             this.loadFileToolStripMenuItem.Click += new System.EventHandler(this.loadFileToolStripMenuItem_Click);
             // 
@@ -103,7 +105,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -275,7 +277,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 421);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "STC Tân Cảng";
             // 
@@ -342,6 +344,28 @@
             this.labelLastshowTime.TabIndex = 12;
             this.labelLastshowTime.Text = "ms";
             // 
+            // btnContinue
+            // 
+            this.btnContinue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnContinue.Location = new System.Drawing.Point(135, 1);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(75, 23);
+            this.btnContinue.TabIndex = 9;
+            this.btnContinue.Text = "Next Round";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // btnNewSpin
+            // 
+            this.btnNewSpin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewSpin.Location = new System.Drawing.Point(216, 1);
+            this.btnNewSpin.Name = "btnNewSpin";
+            this.btnNewSpin.Size = new System.Drawing.Size(75, 23);
+            this.btnNewSpin.TabIndex = 10;
+            this.btnNewSpin.Text = "New Spin";
+            this.btnNewSpin.UseVisualStyleBackColor = true;
+            this.btnNewSpin.Click += new System.EventHandler(this.btnNewSpin_Click);
+            // 
             // txtBoxOutLineStrength
             // 
             this.txtBoxOutLineStrength.AllowSpace = false;
@@ -402,7 +426,7 @@
             this.drawShape1.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drawShape1.FontName = "Microsoft Sans Serif";
             this.drawShape1.GradientColor = System.Drawing.Color.Transparent;
-            this.drawShape1.Location = new System.Drawing.Point(0, 1);
+            this.drawShape1.Location = new System.Drawing.Point(-1, 8);
             this.drawShape1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.drawShape1.Name = "drawShape1";
             this.drawShape1.PenSize = 100;
@@ -418,6 +442,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(791, 462);
+            this.Controls.Add(this.btnContinue);
+            this.Controls.Add(this.btnNewSpin);
             this.Controls.Add(this.labelLastshowTime);
             this.Controls.Add(this.buttonSetSlownDown);
             this.Controls.Add(this.txtBoxLasttimeSlowDown);
@@ -481,7 +507,8 @@
         private System.Windows.Forms.TextBox txtBoxLasttimeSlowDown;
         private System.Windows.Forms.Button buttonSetSlownDown;
         private System.Windows.Forms.Label labelLastshowTime;
-
+        private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Button btnNewSpin;
     }
 }
 

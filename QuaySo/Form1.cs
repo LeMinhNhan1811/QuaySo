@@ -38,6 +38,12 @@ namespace QuaySo
 
         /// list load from file, 2D string Array, 0 is name, 1 is company
         List<string[]> database;
+        private List<string[]> databaseNoRemove = new List<string[]>();
+
+        /// <summary>
+        /// list record
+        /// </summary>
+        List<string> record;
 
         /// Listbox content Name data, which was loaded from file
         ListBox listBox2 = new ListBox();
@@ -180,11 +186,11 @@ namespace QuaySo
                     {
                         drawShape1.Caption = "";
                         drawShape2.Caption = "";
-                        drawShape3.Caption = "";
+                        //drawShape3.Caption = "";
 
                         drawShape1.Invalidate();
                         drawShape2.Invalidate();
-                        drawShape3.Invalidate();
+                        //drawShape3.Invalidate();
 
                         isCleared = true;
                     }
@@ -248,6 +254,7 @@ namespace QuaySo
         private void LoadData(string dir)
         {
             database = new List<string[]>();
+            record = new List<string>();
 
             IEnumerable<string> names = File.ReadLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dir));
 
@@ -288,7 +295,7 @@ namespace QuaySo
                     database.Add(temp);
                 }
             }
-
+            databaseNoRemove = new List<string[]>(database);
 
             isQuaySoEnable = true;
         }
@@ -392,7 +399,6 @@ namespace QuaySo
          */
         public void lastShown(int index)
         {
-            //int index = 277;
             string[] user = new string[2];
             user = database[index];
 
@@ -416,6 +422,7 @@ namespace QuaySo
             drawShape2.Invalidate();
             drawShape3.Invalidate();
 
+            record.Add(user[0].ToString());
             database.RemoveAt(index);
 
             isQuaySoEnable = true;
@@ -425,6 +432,7 @@ namespace QuaySo
             if (File.Exists(soundWinLoc) == true)
             {
                 soundWin.Play();
+                drawShape3.Caption += String.Join("; ", record);
             }
         }
 
@@ -597,6 +605,7 @@ namespace QuaySo
                 fileLocation = openFileDialog.FileName;
                 LoadData(fileLocation);
 
+                drawShape3.Caption = string.Empty;
                 isLoaded = true;
                 labelFileStatus.Text = "Loaded";
             }
@@ -769,5 +778,27 @@ namespace QuaySo
             LoadOption();
         }
 
+        private void btnNewSpin_Click(object sender, EventArgs e)
+        {
+            database = new List<string[]>(databaseNoRemove);
+            clearForm();
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            clearForm();
+        }
+
+        private void clearForm()
+        {
+            record = new List<string>();
+            drawShape1.Caption = "";
+            drawShape2.Caption = "";
+            drawShape3.Caption = "";
+
+            drawShape1.Invalidate();
+            drawShape2.Invalidate();
+            drawShape3.Invalidate();
+        }
     }
 }
