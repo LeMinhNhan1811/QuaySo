@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuaySo.exe" size="35288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuaySo.exe" size="36312">
       <assemblyIdentity name="QuaySo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>q4DE8alLuXEihB6Icltcc7fIjx6bQT4dD8gyRtiZL2k=</dsig:DigestValue>
+        <dsig:DigestValue>JC+g5PWBYp+Iau7bBsMSZUSqHf2lcj0XP2+ZQpe3t1I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
