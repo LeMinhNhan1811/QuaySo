@@ -51,11 +51,8 @@
             this.loadSelectingSoundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadWinSoundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.drawShape3 = new CzaryText.Control.DrawShape();
-            this.drawShape2 = new CzaryText.Control.DrawShape();
             this.labelFileStatus = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.drawShape1 = new CzaryText.Control.DrawShape();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.buttonSet = new System.Windows.Forms.Button();
@@ -68,7 +65,11 @@
             this.labelLastshowTime = new System.Windows.Forms.Label();
             this.btnContinue = new System.Windows.Forms.Button();
             this.btnNewSpin = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.txtBoxOutLineStrength = new QuaySo.NumericTextBox();
+            this.drawShape3 = new CzaryText.Control.DrawShape();
+            this.drawShape2 = new CzaryText.Control.DrawShape();
+            this.drawShape1 = new CzaryText.Control.DrawShape();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +82,7 @@
             this.optionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(791, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(825, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -256,8 +257,135 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(791, 438);
+            this.panel1.Size = new System.Drawing.Size(825, 514);
             this.panel1.TabIndex = 3;
+            // 
+            // labelFileStatus
+            // 
+            this.labelFileStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelFileStatus.AutoSize = true;
+            this.labelFileStatus.BackColor = System.Drawing.Color.White;
+            this.labelFileStatus.Location = new System.Drawing.Point(759, 497);
+            this.labelFileStatus.Name = "labelFileStatus";
+            this.labelFileStatus.Size = new System.Drawing.Size(63, 13);
+            this.labelFileStatus.TabIndex = 6;
+            this.labelFileStatus.Text = "Not Loaded";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(4, 497);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "STC Tân Cảng";
+            // 
+            // buttonSet
+            // 
+            this.buttonSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSet.Location = new System.Drawing.Point(690, 2);
+            this.buttonSet.Name = "buttonSet";
+            this.buttonSet.Size = new System.Drawing.Size(75, 21);
+            this.buttonSet.TabIndex = 5;
+            this.buttonSet.Text = "Set Outline";
+            this.buttonSet.UseVisualStyleBackColor = true;
+            this.buttonSet.Click += new System.EventHandler(this.buttonSet_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            // 
+            // buttonSetSpeed
+            // 
+            this.buttonSetSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSetSpeed.Location = new System.Drawing.Point(550, 2);
+            this.buttonSetSpeed.Name = "buttonSetSpeed";
+            this.buttonSetSpeed.Size = new System.Drawing.Size(75, 20);
+            this.buttonSetSpeed.TabIndex = 7;
+            this.buttonSetSpeed.Text = "Set Speed";
+            this.buttonSetSpeed.UseVisualStyleBackColor = true;
+            this.buttonSetSpeed.Click += new System.EventHandler(this.buttonSetSpeed_Click);
+            // 
+            // txtBoxSpeed
+            // 
+            this.txtBoxSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxSpeed.Location = new System.Drawing.Point(631, 2);
+            this.txtBoxSpeed.Name = "txtBoxSpeed";
+            this.txtBoxSpeed.Size = new System.Drawing.Size(53, 20);
+            this.txtBoxSpeed.TabIndex = 9;
+            // 
+            // txtBoxLasttimeSlowDown
+            // 
+            this.txtBoxLasttimeSlowDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxLasttimeSlowDown.Location = new System.Drawing.Point(455, 2);
+            this.txtBoxLasttimeSlowDown.Name = "txtBoxLasttimeSlowDown";
+            this.txtBoxLasttimeSlowDown.Size = new System.Drawing.Size(72, 20);
+            this.txtBoxLasttimeSlowDown.TabIndex = 10;
+            // 
+            // buttonSetSlownDown
+            // 
+            this.buttonSetSlownDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSetSlownDown.Location = new System.Drawing.Point(331, 1);
+            this.buttonSetSlownDown.Name = "buttonSetSlownDown";
+            this.buttonSetSlownDown.Size = new System.Drawing.Size(118, 23);
+            this.buttonSetSlownDown.TabIndex = 11;
+            this.buttonSetSlownDown.Text = "Set Slow Down Time";
+            this.buttonSetSlownDown.UseVisualStyleBackColor = true;
+            this.buttonSetSlownDown.Click += new System.EventHandler(this.btnSetSlownDown_Click);
+            // 
+            // labelLastshowTime
+            // 
+            this.labelLastshowTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelLastshowTime.AutoSize = true;
+            this.labelLastshowTime.Location = new System.Drawing.Point(529, 6);
+            this.labelLastshowTime.Name = "labelLastshowTime";
+            this.labelLastshowTime.Size = new System.Drawing.Size(20, 13);
+            this.labelLastshowTime.TabIndex = 12;
+            this.labelLastshowTime.Text = "ms";
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnContinue.Location = new System.Drawing.Point(171, 1);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(75, 23);
+            this.btnContinue.TabIndex = 9;
+            this.btnContinue.Text = "Next Round";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // btnNewSpin
+            // 
+            this.btnNewSpin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewSpin.Location = new System.Drawing.Point(250, 1);
+            this.btnNewSpin.Name = "btnNewSpin";
+            this.btnNewSpin.Size = new System.Drawing.Size(75, 23);
+            this.btnNewSpin.TabIndex = 10;
+            this.btnNewSpin.Text = "New Spin";
+            this.btnNewSpin.UseVisualStyleBackColor = true;
+            this.btnNewSpin.Click += new System.EventHandler(this.btnNewSpin_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Location = new System.Drawing.Point(110, 1);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(56, 23);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "Hủy";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // txtBoxOutLineStrength
+            // 
+            this.txtBoxOutLineStrength.AllowSpace = false;
+            this.txtBoxOutLineStrength.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxOutLineStrength.Location = new System.Drawing.Point(769, 2);
+            this.txtBoxOutLineStrength.Name = "txtBoxOutLineStrength";
+            this.txtBoxOutLineStrength.Size = new System.Drawing.Size(55, 20);
+            this.txtBoxOutLineStrength.TabIndex = 4;
             // 
             // drawShape3
             // 
@@ -270,7 +398,7 @@
             this.drawShape3.FillColor = System.Drawing.Color.OrangeRed;
             this.drawShape3.FontName = "Microsoft Sans Serif";
             this.drawShape3.GradientColor = System.Drawing.Color.Transparent;
-            this.drawShape3.Location = new System.Drawing.Point(3, 325);
+            this.drawShape3.Location = new System.Drawing.Point(20, 363);
             this.drawShape3.Name = "drawShape3";
             this.drawShape3.PenSize = 48;
             this.drawShape3.ShadowColor = System.Drawing.Color.Black;
@@ -290,7 +418,7 @@
             this.drawShape2.FillColor = System.Drawing.Color.OrangeRed;
             this.drawShape2.FontName = "Microsoft Sans Serif";
             this.drawShape2.GradientColor = System.Drawing.Color.Transparent;
-            this.drawShape2.Location = new System.Drawing.Point(0, 215);
+            this.drawShape2.Location = new System.Drawing.Point(17, 253);
             this.drawShape2.Name = "drawShape2";
             this.drawShape2.PenSize = 48;
             this.drawShape2.ShadowColor = System.Drawing.Color.Black;
@@ -298,28 +426,6 @@
             this.drawShape2.Size = new System.Drawing.Size(791, 113);
             this.drawShape2.TabIndex = 7;
             this.drawShape2.TextType = CzaryText.Control.TextType.Text3Outline;
-            // 
-            // labelFileStatus
-            // 
-            this.labelFileStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelFileStatus.AutoSize = true;
-            this.labelFileStatus.BackColor = System.Drawing.Color.White;
-            this.labelFileStatus.Location = new System.Drawing.Point(725, 421);
-            this.labelFileStatus.Name = "labelFileStatus";
-            this.labelFileStatus.Size = new System.Drawing.Size(63, 13);
-            this.labelFileStatus.TabIndex = 6;
-            this.labelFileStatus.Text = "Not Loaded";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 421);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "STC Tân Cảng";
             // 
             // drawShape1
             // 
@@ -342,106 +448,13 @@
             this.drawShape1.TabIndex = 2;
             this.drawShape1.TextType = CzaryText.Control.TextType.Text3Outline;
             // 
-            // buttonSet
-            // 
-            this.buttonSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSet.Location = new System.Drawing.Point(656, 2);
-            this.buttonSet.Name = "buttonSet";
-            this.buttonSet.Size = new System.Drawing.Size(75, 21);
-            this.buttonSet.TabIndex = 5;
-            this.buttonSet.Text = "Set Outline";
-            this.buttonSet.UseVisualStyleBackColor = true;
-            this.buttonSet.Click += new System.EventHandler(this.buttonSet_Click);
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog";
-            // 
-            // buttonSetSpeed
-            // 
-            this.buttonSetSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSetSpeed.Location = new System.Drawing.Point(516, 2);
-            this.buttonSetSpeed.Name = "buttonSetSpeed";
-            this.buttonSetSpeed.Size = new System.Drawing.Size(75, 20);
-            this.buttonSetSpeed.TabIndex = 7;
-            this.buttonSetSpeed.Text = "Set Speed";
-            this.buttonSetSpeed.UseVisualStyleBackColor = true;
-            this.buttonSetSpeed.Click += new System.EventHandler(this.buttonSetSpeed_Click);
-            // 
-            // txtBoxSpeed
-            // 
-            this.txtBoxSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBoxSpeed.Location = new System.Drawing.Point(597, 2);
-            this.txtBoxSpeed.Name = "txtBoxSpeed";
-            this.txtBoxSpeed.Size = new System.Drawing.Size(53, 20);
-            this.txtBoxSpeed.TabIndex = 9;
-            // 
-            // txtBoxLasttimeSlowDown
-            // 
-            this.txtBoxLasttimeSlowDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBoxLasttimeSlowDown.Location = new System.Drawing.Point(421, 2);
-            this.txtBoxLasttimeSlowDown.Name = "txtBoxLasttimeSlowDown";
-            this.txtBoxLasttimeSlowDown.Size = new System.Drawing.Size(72, 20);
-            this.txtBoxLasttimeSlowDown.TabIndex = 10;
-            // 
-            // buttonSetSlownDown
-            // 
-            this.buttonSetSlownDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSetSlownDown.Location = new System.Drawing.Point(297, 1);
-            this.buttonSetSlownDown.Name = "buttonSetSlownDown";
-            this.buttonSetSlownDown.Size = new System.Drawing.Size(118, 23);
-            this.buttonSetSlownDown.TabIndex = 11;
-            this.buttonSetSlownDown.Text = "Set Slow Down Time";
-            this.buttonSetSlownDown.UseVisualStyleBackColor = true;
-            this.buttonSetSlownDown.Click += new System.EventHandler(this.btnSetSlownDown_Click);
-            // 
-            // labelLastshowTime
-            // 
-            this.labelLastshowTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelLastshowTime.AutoSize = true;
-            this.labelLastshowTime.Location = new System.Drawing.Point(495, 6);
-            this.labelLastshowTime.Name = "labelLastshowTime";
-            this.labelLastshowTime.Size = new System.Drawing.Size(20, 13);
-            this.labelLastshowTime.TabIndex = 12;
-            this.labelLastshowTime.Text = "ms";
-            // 
-            // btnContinue
-            // 
-            this.btnContinue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnContinue.Location = new System.Drawing.Point(135, 1);
-            this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(75, 23);
-            this.btnContinue.TabIndex = 9;
-            this.btnContinue.Text = "Next Round";
-            this.btnContinue.UseVisualStyleBackColor = true;
-            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
-            // 
-            // btnNewSpin
-            // 
-            this.btnNewSpin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewSpin.Location = new System.Drawing.Point(216, 1);
-            this.btnNewSpin.Name = "btnNewSpin";
-            this.btnNewSpin.Size = new System.Drawing.Size(75, 23);
-            this.btnNewSpin.TabIndex = 10;
-            this.btnNewSpin.Text = "New Spin";
-            this.btnNewSpin.UseVisualStyleBackColor = true;
-            this.btnNewSpin.Click += new System.EventHandler(this.btnNewSpin_Click);
-            // 
-            // txtBoxOutLineStrength
-            // 
-            this.txtBoxOutLineStrength.AllowSpace = false;
-            this.txtBoxOutLineStrength.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBoxOutLineStrength.Location = new System.Drawing.Point(735, 2);
-            this.txtBoxOutLineStrength.Name = "txtBoxOutLineStrength";
-            this.txtBoxOutLineStrength.Size = new System.Drawing.Size(55, 20);
-            this.txtBoxOutLineStrength.TabIndex = 4;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(791, 462);
+            this.ClientSize = new System.Drawing.Size(825, 538);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnNewSpin);
             this.Controls.Add(this.labelLastshowTime);
@@ -509,6 +522,7 @@
         private System.Windows.Forms.Label labelLastshowTime;
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Button btnNewSpin;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

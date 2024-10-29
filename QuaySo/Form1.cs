@@ -799,5 +799,20 @@ namespace QuaySo
             drawShape2.Invalidate();
             drawShape3.Invalidate();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            drawShape1.Caption = "";
+            drawShape2.Caption = "";
+            drawShape1.Invalidate();
+            drawShape2.Invalidate();
+            //
+            if (record.Count > 0)
+            {
+                record.RemoveAt(record.Count - 1);
+            }
+            drawShape3.Caption = String.Join("; ", record);
+            drawShape3.Invalidate();
+        }
     }
 }

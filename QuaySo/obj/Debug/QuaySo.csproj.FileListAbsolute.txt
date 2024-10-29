@@ -47,3 +47,4 @@ E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.application
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.exe
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.pdb
 E:\Out-Source\QuaySo\QuaySo\QuaySo\bin\Debug\QuaySo.pdb
+E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.csproj.AssemblyReference.cache
