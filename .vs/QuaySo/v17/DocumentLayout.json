@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Out-Source\\QuaySo\\QuaySo\\",
+  "WorkspaceRootPath": "D:\\C\u00F4ng vi\u1EC7c\\Sources\\QuaySo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|E:\\Out-Source\\QuaySo\\QuaySo\\quayso\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|solutionrelative:quayso\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|d:\\c\u00F4ng vi\u1EC7c\\sources\\quayso\\quayso\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|solutionrelative:quayso\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|e:\\out-source\\quayso\\quayso\\quayso\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|solutionrelative:quayso\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|D:\\C\u00F4ng vi\u1EC7c\\Sources\\QuaySo\\QuaySo\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{84C6EB69-BA4D-4CA1-9A5D-4022B7695C64}|QuaySo\\QuaySo.csproj|solutionrelative:QuaySo\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,48 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\Out-Source\\QuaySo\\QuaySo\\QuaySo\\Form1.cs",
+              "DocumentMoniker": "D:\\C\u00F4ng vi\u1EC7c\\Sources\\QuaySo\\QuaySo\\Form1.cs",
               "RelativeDocumentMoniker": "QuaySo\\Form1.cs",
-              "ToolTip": "E:\\Out-Source\\QuaySo\\QuaySo\\QuaySo\\Form1.cs",
+              "ToolTip": "D:\\C\u00F4ng vi\u1EC7c\\Sources\\QuaySo\\QuaySo\\Form1.cs",
               "RelativeToolTip": "QuaySo\\Form1.cs",
-              "ViewState": "AQIAAO4CAAAAAAAAAAA5wAEDAAAJAAAA",
+              "ViewState": "AgIAAHgBAAAAAAAAAAAmwJUBAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-04T02:21:17.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\Out-Source\\QuaySo\\QuaySo\\QuaySo\\Form1.cs",
+              "DocumentMoniker": "D:\\C\u00F4ng vi\u1EC7c\\Sources\\QuaySo\\QuaySo\\Form1.cs",
               "RelativeDocumentMoniker": "QuaySo\\Form1.cs",
-              "ToolTip": "E:\\Out-Source\\QuaySo\\QuaySo\\QuaySo\\Form1.cs [Design]",
+              "ToolTip": "D:\\C\u00F4ng vi\u1EC7c\\Sources\\QuaySo\\QuaySo\\Form1.cs [Design]",
               "RelativeToolTip": "QuaySo\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-04T02:17:50.344Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2023-12-04T02:17:50.344Z"
             }
           ]
         }

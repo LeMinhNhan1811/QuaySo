@@ -28,3 +28,15 @@ E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.application
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.exe
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.pdb
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Release\QuaySo.csproj.AssemblyReference.cache
+D:\Công việc\Sources\QuaySo\QuaySo\bin\Release\QuaySo.exe.config
+D:\Công việc\Sources\QuaySo\QuaySo\bin\Release\QuaySo.exe
+D:\Công việc\Sources\QuaySo\QuaySo\bin\Release\QuaySo.pdb
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.csproj.AssemblyReference.cache
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.exe.config
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\CzaryText.Control.DrawShape.resources
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.Form1.resources
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.Properties.Resources.resources
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.csproj.GenerateResource.cache
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.csproj.CoreCompileInputs.cache
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.exe
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Release\QuaySo.pdb

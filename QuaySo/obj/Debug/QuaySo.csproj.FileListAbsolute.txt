@@ -48,3 +48,13 @@ E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.exe
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.pdb
 E:\Out-Source\QuaySo\QuaySo\QuaySo\bin\Debug\QuaySo.pdb
 E:\Out-Source\QuaySo\QuaySo\QuaySo\obj\Debug\QuaySo.csproj.AssemblyReference.cache
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\CzaryText.Control.DrawShape.resources
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\QuaySo.Form1.resources
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\QuaySo.Properties.Resources.resources
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\QuaySo.csproj.GenerateResource.cache
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\QuaySo.exe
+D:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\QuaySo.pdb
+D:\Công việc\Sources\QuaySo\QuaySo\bin\Debug\QuaySo.exe.config
+D:\Công việc\Sources\QuaySo\QuaySo\bin\Debug\QuaySo.exe
+D:\Công việc\Sources\QuaySo\QuaySo\bin\Debug\QuaySo.pdb
+d:\Công việc\Sources\QuaySo\QuaySo\obj\Debug\QuaySo.csprojResolveAssemblyReference.cache

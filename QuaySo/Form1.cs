@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -54,6 +54,27 @@ namespace QuaySo
         private int lastshownTime = 3000;
         private int lastshownCounter = 0;
         private int lastshownCounterLimit = 0;
+
+        /// <summary>
+        /// Danh sách mã số kết quả cơ cấu theo thứ tự từng vòng:
+        /// - Vòng 1: 018
+        /// - Vòng 2: 160
+        /// - Vòng 3: 026, 163
+        /// - Vòng 4: 002, 013, 031, 037, 066, 049, 043, 024, 041, 059
+        /// - Vòng 5 trở đi: Random các số còn lại trong danh sách
+        /// </summary>
+        private List<string> fixedResultCodes = new List<string>
+        {
+            // Vòng 1
+            "018",
+            // Vòng 2
+            "160",
+            // Vòng 3
+            "026", "163",
+            // Vòng 4
+            "002", "013", "031", "037", "066", "049", "043", "024", "041", "059"
+        };
+        private int fixedResultSpinCount = 0;   // Số lần quay đã thực hiện
 
         /// Color used for render
         private Color mainFillColor = Color.Orange;
@@ -254,6 +275,7 @@ namespace QuaySo
         {
             listSpinner = new List<string[]>();
             record = new List<string>();
+            fixedResultSpinCount = 0;
 
             IEnumerable<string> names = File.ReadLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dir));
 
@@ -308,6 +330,34 @@ namespace QuaySo
         {
             panel1.BackgroundImage =
                 Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dir));
+        }
+
+        /**
+         * @brief Tìm vị trí của người có mã số targetCode trong listSpinner hiện tại
+         */
+        private int FindFixedTargetIndex(string targetCode)
+        {
+            if (string.IsNullOrEmpty(targetCode) || listSpinner == null || listSpinner.Count == 0)
+                return -1;
+
+            int targetVal = 0;
+            bool targetHasVal = int.TryParse(targetCode, out targetVal);
+
+            return listSpinner.FindIndex(delegate(string[] item)
+            {
+                if (item == null || item.Length == 0 || string.IsNullOrEmpty(item[0]))
+                    return false;
+
+                string code = item[0].Trim();
+                if (string.Equals(code, targetCode, StringComparison.OrdinalIgnoreCase))
+                    return true;
+
+                int cVal = 0;
+                if (targetHasVal && int.TryParse(code, out cVal))
+                    return cVal == targetVal;
+
+                return false;
+            });
         }
 
         /**
@@ -389,6 +439,18 @@ namespace QuaySo
                 timer.Stop();
                 timer.Enabled = false;
                 timer.Tick -= lastshownBefore;
+
+                // Nếu vòng quay hiện tại nằm trong danh sách cơ cấu cố định
+                if (fixedResultSpinCount < fixedResultCodes.Count)
+                {
+                    string targetCode = fixedResultCodes[fixedResultSpinCount];
+                    int targetIdx = FindFixedTargetIndex(targetCode);
+                    if (targetIdx != -1)
+                    {
+                        index = targetIdx;
+                    }
+                }
+
                 lastShown(index);
             }
         }
@@ -398,6 +460,8 @@ namespace QuaySo
          */
         public void lastShown(int index)
         {
+            fixedResultSpinCount++;  // tăng đếm số vòng quay đã thực hiện
+
             string[] user = new string[2];
             user = listSpinner[index];
 
@@ -780,6 +844,7 @@ namespace QuaySo
         private void btnNewSpin_Click(object sender, EventArgs e)
         {
             listSpinner = new List<string[]>(originalListSpinner);
+            fixedResultSpinCount = 0;  // reset lại đếm vòng quay khi bắt đầu lại
             clearForm();
         }
 
